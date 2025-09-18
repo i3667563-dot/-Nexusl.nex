@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}NEXUS{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+        }
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+            color: #444;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .section p {
+            line-height: 1.6;
+            color: #666;
+        }
+        footer {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    {% block body %}
+    <header>
+        <img src="https://media.discordapp.net/attachments/1410996239931015198/1418224754141167616/1758201473-no-bg-preview_carve.photos.png?ex=68cd583a&is=68cc06ba&hm=688c61159346941b8ed4ce7ce46b4f705272db598006507bf30c2c402da7c482&=&format=webp&quality=lossless&width=960&height=960" alt="NEXUS Logo">
+        <h1>NEXUS</h1>
+    </header>
+    <nav>
+        <a href="about">О проекте</a>
+        <a href="#features">Функции</a>
+        <a href="contact">Контакты</a>
+    </nav>
+    <div class="container">
+        <div class="section" id="about">
+            <h2>О проекте</h2>
+            <p>NEXUS — это вспомогательная утилита, которая предоставляет мини-помощников для выполнения различных задач. Основная цель проекта — упростить и ускорить выполнение рутинных операций, предоставляя удобные инструменты и скрипты.</p>
+        </div>
+        <div class="section" id="features">
+            <h2>Функции</h2>
+            <p>Основные компоненты NEXUS включают:</p>
+            <ul>
+                <li><strong>pit</strong>: Помощник для работы с файлами.</li>
+                <li><strong>nexus</strong>: Помощник для управления проектом.</li>
+                <li><strong>nex</strong>: Язык программирования, предназначенный для компиляции в Python.</li>
+                <li><strong>Сайт проекта</strong>: Официальный сайт с документацией и ресурсами.</li>
+            </ul>
+        </div>
+        <div class="section" id="contact">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы или предложения, вы можете связаться с нами по адресу <a href="mailto:support@nexus-project.com">support@nexus-project.com</a>.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 NEXUS. Все права защищены.</p>
+    </footer>
+    {% endblock %}
+</body>
+</html>
+
+
