@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 # Секретный токен для доступа к админ-панели
-SECRET_TOKEN = "your_secret_token_here"
+SECRET_TOKEN = "123"
 
 @app.route("/")
 def index():
